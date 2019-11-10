@@ -5,6 +5,10 @@ import random
 
 DEFAULT_FILE = "./deep_list.txt"
 
+class TooManyArguments:
+	def __init__(self):
+		Exception.__init__(self)
+
 def random_n_list(movie_list, count=1):
 
 	if count < 1: return movies
@@ -21,9 +25,21 @@ if __name__ == "__main__":
 
 	if len(sys.argv) == 3:
 
-		file_path = sys.argv[1]
+		if sys.argv[2].isdigit():
 
-		how_many = int(sys.argv[2])
+			file_path = sys.argv[1]
+
+			how_many = int(sys.argv[2])
+
+		elif sys.argv[1].isdigit():
+
+			file_path = sys.argv[2]
+
+			how_many = int(sys.argv[1])
+
+		else:
+
+			raise TooManyArguments
 
 	elif len(sys.argv) == 2:
 
