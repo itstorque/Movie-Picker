@@ -3,6 +3,8 @@
 import sys
 import random
 
+DEFAULT_FILE = "./deep_list.txt"
+
 def random_n_list(movie_list, count=1):
 
 	if count < 1: return movies
@@ -11,15 +13,45 @@ def random_n_list(movie_list, count=1):
 
 def create_list(content, seperator="\n"):
 
-	return content.split(seperator)
+	universe = [i for i in content.split(seperator) if i.replace(" ", "") != ""]
+
+	return universe
 
 if __name__ == "__main__":
 
-	file = open(sys.argv[1], 'r')
+	if len(sys.argv) == 3:
 
-	how_many = int(sys.argv[2])
+		file_path = sys.argv[1]
 
-	file_content = file.read()
+		how_many = int(sys.argv[2])
+
+	elif len(sys.argv) == 2:
+
+		arg_val = sys.argv[1]
+
+		if arg_val.isdigit():
+
+			file_path = DEFAULT_FILE
+
+			how_many = int(arg_val)
+
+		else:
+
+			file_path = arg_val
+
+			how_many = 1
+
+	elif len(sys.argv) == 1:
+
+		file_path = DEFAULT_FILE
+
+		how_many = 1
+
+	else:
+
+		raise TooManyArguments
+
+	file_content = open(file_path, 'r').read()
 
 	movie_list = create_list(file_content)
 
