@@ -1,5 +1,7 @@
 # Movie-Picker
-Random picker for movie nights
+Random picker for movie nights in Deep Lounge
+
+<img src="assets/deep_mta_logo.png" height="50" />
 
 Add your movie suggestions to [deep_list.txt](deep_list.txt) and create a pull request for it and will merge it to the list of movies.
 
