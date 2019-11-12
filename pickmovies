@@ -1,1 +1,1 @@
-python3 select_movie.py &*
+python3 select_movie.py $*
