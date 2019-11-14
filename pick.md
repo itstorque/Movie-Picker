@@ -4,8 +4,6 @@ title: /pick
 permalink: /pick/
 ---
 
-{% include header.html %}
-
 <body>
 <p id="deep_list" onload="brython()">
     {% include_relative deep_list.txt %}
