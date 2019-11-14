@@ -1,10 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: page
+title: /pick
+permalink: /pick/
 ---
 
+{% include header.html %}
+
+<body>
 <p id="deep_list" onload="brython()">
     {% include_relative deep_list.txt %}
 </p>
@@ -20,6 +22,8 @@ layout: home
     from browser import document, alert
 
     from select_movie import *
+
+    alert("yo")
 
     file_content = document["deep_list"].text
 

@@ -27,9 +27,13 @@ twitter_username: tareqdandachi
 github_username:  tareqdandachi
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+#theme: minima
+
+#plugins:
+#  - jekyll-feed
+
+theme: jekyll-theme-console
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -50,3 +54,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+header_pages:
+  - index.md
+  - about.md
+  - pick.md
+
+style: dark
+listen_for_clients_preferred_style: false
+
+footer: 'Find this site on GitHub <a href="https://github.com/tareqdandachi">@tareqdandachi</a>'
+
