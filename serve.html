@@ -10,6 +10,10 @@
   </head>
 
   <body onload="brython()">
+    
+    <p id="deep_list" hidden>
+      {% include deep_list.txt %}
+    </p>
   
     <script type="text/python">
     
@@ -17,7 +21,7 @@
     
     from select_movie import *
     
-    file_content = "test0 \n test1 \n test2 \n test3 \n test4 \n test5 \n test6 \n test7 \n test8"
+    file_content = document["deep_list"].text
     
     movie_list = create_list(file_content)
     
