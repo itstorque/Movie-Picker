@@ -12,3 +12,7 @@ Add your movie suggestions to [deep_list.txt](deep_list.txt) and create a pull r
 
 
 *NOTE*: If you do need to remove a movie, include the *reason why* in your commit message
+
+## Run The Picker
+
+Go to the link [/pick](/pick) to see the movie picks for this night
