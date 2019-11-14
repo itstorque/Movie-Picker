@@ -15,11 +15,15 @@
     
     from browser import document, alert
     
-    document <= "INSERT MOVIES HERE"
+    from select_movie import *
+    
+    movie_list = "test0 \n test1 \n test2 \n test3 \n test4 \n test5 \n test6 \n test7 \n test8"
+    
+    document <= "Random 6 movies:"
+    
+    document <= random_n_list(movie_list, 5)
     
     </script>
-    
-    TEST
 
   </body>
 
