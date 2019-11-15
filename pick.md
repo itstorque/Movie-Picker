@@ -1,17 +1,16 @@
 ---
 layout: page
 title: Pick
-permalink: /pick/
+enable_brython: True
+permalink: /pick
 ---
 
-<body>
+
 <p id="deep_list" onload="brython()">
     {% include_relative deep_list.txt %}
 </p>
 
 <script type="text/javascript">
-
-    alert(document.getElementById('deep_list').innerHTML)
 
 </script>
 
@@ -21,14 +20,32 @@ permalink: /pick/
 
     from select_movie import *
 
-    alert("yo")
-
     file_content = document["deep_list"].text
+
+    while "\n " in file_content:
+
+      file_content = file_content.replace("\n ", "\n")
+
+    while "  " in file_content:
+
+      file_content = file_content.replace("  ", " ")
+
+    while "\n\n" in file_content:
+
+      file_content = file_content.replace("\n\n", "\n")
 
     movie_list = create_list(file_content)
 
+    chosen_movies = random_n_list(movie_list, 6)
+
+    for movie_title in chosen_movies:
+
+      file_content = file_content.replace(movie_title, "<span class='selected'>" + movie_title + "</span>")
+
+    document["deep_list"].html = file_content
+
     document <= "Random 6 movies:\n\n"
 
-    document <= random_n_list(movie_list, 6)
+    document <= chosen_movies
 
 </script>
