@@ -1,6 +1,6 @@
 ---
-layout: page
-title: /movie-picker
+layout: home
+title: Movie-Picker
 permalink: /
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: /pick
+title: Pick
 permalink: /pick/
 ---
 

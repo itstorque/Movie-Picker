@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -19,21 +19,17 @@
 # in the templates via {{ site.myvariable }}.
 
 title: The Deep's Movie Picker
-email: tareqdandachi@gmail.com
 description: Deep Lounge's random picker for movie nights.
-baseurl: "/Movie-Picker" # the subpath of your site, e.g. /blog
-url: "tareqdandachi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tareqdandachi
-github_username:  tareqdandachi
+baseurl: "/Movie-Picker"
+url: "tareqdandachi.github.io"
+# twitter_username: tareqdandachi
+# github_username:  tareqdandachi
 
 # Build settings
-#theme: minima
+theme: minima
 
-#plugins:
-#  - jekyll-feed
-
-theme: jekyll-theme-console
-
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -61,7 +57,5 @@ header_pages:
   - pick.md
 
 style: dark
-listen_for_clients_preferred_style: false
 
 footer: 'Find this site on GitHub <a href="https://github.com/tareqdandachi">@tareqdandachi</a>'
-
