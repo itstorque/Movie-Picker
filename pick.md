@@ -7,13 +7,13 @@ permalink: /pick
 
 
 
-{% highlight ruby %}
+{% highlight javascript %}
 
 if (want_fast_poll_creation == true) {
 
-  copy(below_grey_code);
+  let x = copy(below_grey_code);
 
-  paste_into_console(the_code_you_copied);
+  return paste_into_console(x);
 
 }
 
