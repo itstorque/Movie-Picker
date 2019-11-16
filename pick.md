@@ -6,13 +6,24 @@ permalink: /pick
 ---
 
 
+
+{% highlight ruby %}
+
+if (want_fast_poll_creation == true) {
+
+  copy(below_grey_code);
+
+  paste_into_console(the_code_you_copied);
+
+}
+
+{% endhighlight %}
+
+<p id="command_placeholder"></p>
+
 <p id="deep_list" onload="brython()">
     {% include_relative deep_list.txt %}
 </p>
-
-<script type="text/javascript">
-
-</script>
 
 <script type="text/python">
 
@@ -44,8 +55,8 @@ permalink: /pick
 
     document["deep_list"].html = file_content
 
-    document <= "Random 6 movies:\n\n"
+    command = 'answers=["Movie Poll for "+(new Date()).getMonth()+"/"+(new Date()).getDay(),"%s","%s","%s","%s","%s","%s"];x=document.getElementsByClassName("_30yy _7oam");for(var i=0;i<x.length;i++){if(x[i].title=="Create a poll"){x=x[i];break}};x.click();setTimeout(()=>{for(var i=0;i<6;i++){document.getElementsByClassName("_5n1-")[0].click()};setTimeout(()=>{y=document.getElementsByClassName("_58al");for(var i=0;i<7;i++){y[i+1].value=answers[i]}},200)},100)' % tuple(chosen_movies)
 
-    document <= chosen_movies
+    document["command_placeholder"].text = command
 
 </script>
