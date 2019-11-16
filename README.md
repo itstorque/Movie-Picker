@@ -3,7 +3,7 @@ Random picker for movie nights in Deep Lounge
 
 <img src="assets/deep_mta_logo.png" height="50" />
 
-Add your movie suggestions to [deep_list.txt](deep_list.txt) and create a pull request for it and will merge it to the list of movies.
+Add your movie suggestions to [deep_list.txt](https://github.com/tareqdandachi/Movie-Picker/blob/master/deep_list.txt) and create a pull request for it and will merge it to the list of movies.
 
 ### Rules to get your recommendations merged
 
@@ -15,4 +15,4 @@ Add your movie suggestions to [deep_list.txt](deep_list.txt) and create a pull r
 
 ## Run The Picker
 
-Go to the link [/pick](/pick) to see the movie picks for this night
+Go to the link [/pick](https://tareqdandachi.github.io/Movie-Picker/pick) to see the movie picks for this night
