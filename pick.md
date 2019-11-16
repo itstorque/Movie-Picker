@@ -21,7 +21,11 @@ if (want_fast_poll_creation == true) {
 
 <p id="command_placeholder"></p>
 
-<p id="deep_list" onload="brython()">
+<p id="deep_list_data_src" onload="brython()" hidden>
+    {% include_relative deep_list.txt %}
+</p>
+
+<p id="deep_list">
     {% include_relative deep_list.txt %}
 </p>
 
@@ -31,7 +35,7 @@ if (want_fast_poll_creation == true) {
 
     from select_movie import *
 
-    file_content = document["deep_list"].text
+    file_content = document["deep_list_data_src"].text
 
     while "\n " in file_content:
 
@@ -46,6 +50,8 @@ if (want_fast_poll_creation == true) {
       file_content = file_content.replace("\n\n", "\n")
 
     movie_list = create_list(file_content)
+
+    file_content = "\n".join(sorted(movie_list))
 
     chosen_movies = random_n_list(movie_list, 6)
 
