@@ -2,8 +2,7 @@
 
 import sys
 import random
-
-DEFAULT_FILE = "./deep_list.txt"
+from constants import *
 
 class TooManyArguments:
 	def __init__(self):
