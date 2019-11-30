@@ -150,9 +150,6 @@ GEM
     jekyll-theme-cayman (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
-    jekyll-theme-console (0.3.7)
-      jekyll (>= 3.5)
-      jekyll-seo-tag
     jekyll-theme-dinky (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -250,8 +247,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 202)
-  jekyll-feed
-  jekyll-theme-console
+  jekyll-remote-theme
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data

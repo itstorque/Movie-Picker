@@ -5,7 +5,8 @@ gem "minima", "~> 2.5"
 gem "github-pages", 202#group: :jekyll_plugins
 
 group :jekyll_plugins do
-  gem "jekyll-feed"#, "~> 0.12"
+  # gem "jekyll-feed"#, "~> 0.12"
+  gem 'jekyll-remote-theme'
   #gem "jekyll-theme-console"
 end
 
