@@ -20,6 +20,10 @@ def create_list(content, seperator="\n"):
 
 	return universe
 
+def remove_watched(list):
+
+	return [item for item in list if item[0] != "*"]
+
 if __name__ == "__main__":
 
 	if len(sys.argv) == 3:
@@ -69,5 +73,7 @@ if __name__ == "__main__":
 	file_content = open(file_path, 'r').read()
 
 	movie_list = create_list(file_content)
+
+	movie_list = remove_watched(movie_list)
 
 	print(random_n_list(movie_list, how_many))

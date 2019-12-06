@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about
+permalink_name: /about
 ---
 
 This website is what MIT/Next-House/3W/Deep-Lounge uses to select what movies to watch on movie night!

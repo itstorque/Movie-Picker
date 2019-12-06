@@ -18,6 +18,8 @@ while "\n\n" in file_content:
 
 movie_list = create_list(file_content)
 
+movie_list = remove_watched(movie_list)
+
 file_content = "\n".join(sorted(movie_list))
 
 chosen_movies = random_n_list(movie_list, 6)

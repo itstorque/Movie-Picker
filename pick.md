@@ -3,6 +3,7 @@ layout: page
 title: Pick
 enable_brython: True
 permalink: /pick
+permalink_name: /pick
 ---
 
 
