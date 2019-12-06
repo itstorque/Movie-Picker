@@ -28,7 +28,9 @@ permalink_name: /pick
   document.getElementById("copy_js").onclick = function(){
 
     var copyText = document.createElement('input');
+
     document.body.appendChild(copyText)
+    copyText.value = document.getElementById("command_placeholder").textContent
 
     copyText.select();
     copyText.setSelectionRange(0, 99999);
