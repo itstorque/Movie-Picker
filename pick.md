@@ -27,13 +27,17 @@ permalink_name: /pick
 
   document.getElementById("copy_js").onclick = function(){
 
-    var fake_input = document.createElement('input');
-    document.body.appendChild(fake_input)
-    inp.value = document.getElementById("command_placeholder").textContent
-    inp.select();
-    document.execCommand('copy', false);
-    inp.remove();
+    var copyText = document.createElement('input');
+    document.body.appendChild(copyText)
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    document.execCommand("copy");
+
+    alert("Copied the script: " + copyText.value);
+    copyText.remove()
 
   };
-  
+
 </script>
