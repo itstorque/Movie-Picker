@@ -9,7 +9,7 @@ permalink_name: /pick
 
 <p id="command_placeholder"></p>
 
-<p id="deep_list_data_src" onload="brython()" hidden>
+<p id="deep_list_data_src" hidden>
     {% include_relative deep_list.txt %}
 </p>
 
@@ -18,3 +18,9 @@ permalink_name: /pick
 </p>
 
 <script type="text/python" src="web_selector.py"></script>
+
+<script type="text/javascript">
+  window.onload = function() {
+     brython();
+  }
+</script>
